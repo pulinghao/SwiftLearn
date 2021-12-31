@@ -10,7 +10,7 @@ import SwiftUI
 struct ItemDetail: View {
     let item : MenuItem
     @EnvironmentObject var order : Order
-    
+    @EnvironmentObject var fav : Favorite
     var body: some View {
         VStack{
             ZStack(alignment: .bottomTrailing){ //底部对齐
@@ -30,7 +30,11 @@ struct ItemDetail: View {
             Button("Order This") {
                 order.add(item: item)
             }
-            .font(.headline)
+            .font(.system(size: 16, weight: .light, design: .default))
+            Spacer()
+            Button("Like This"){
+                fav.add(item: item)
+            }
             Spacer()
         }
         .navigationTitle(item.name)
@@ -42,6 +46,7 @@ struct ItemDetail_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView{  //设置为一个navigation
             ItemDetail(item:MenuItem.example).environmentObject(Order())
+                .environmentObject(Favorite())
         }
     }
 }

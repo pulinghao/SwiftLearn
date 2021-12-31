@@ -20,17 +20,26 @@ struct OrderView: View {
                             Text("$\(item.price)")
                         }
                     }
+                    .onDelete(perform: deleteItems)
                 }
                 
                 Section{
-                    NavigationLink(destination: Text("Check out")){
+                    NavigationLink(destination: CheckoutView()){
                         Text("Place Order")
                     }
                 }
+                .disabled(order.items.isEmpty)
             }
             .navigationTitle("Order")
             .listStyle(InsetGroupedListStyle()) //If you’re using Xcode 12 you need to use InsetGroupedListStyle() rather than .insetGrouped.
+            .toolbar{
+                EditButton()
+            }
         }
+    }
+    
+    func deleteItems(at offsets: IndexSet) {
+        order.items.remove(atOffsets: offsets)
     }
 }
 

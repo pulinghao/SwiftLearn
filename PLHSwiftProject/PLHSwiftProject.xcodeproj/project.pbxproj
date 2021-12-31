@@ -22,6 +22,9 @@
 		B6E74C55277D86E400AF647A /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E74C54277D86E400AF647A /* ItemDetail.swift */; };
 		B6E74C57277DA24800AF647A /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E74C56277DA24800AF647A /* OrderView.swift */; };
 		B6E74C59277DA5F900AF647A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E74C58277DA5F900AF647A /* MainView.swift */; };
+		B6E74C5B277DACC300AF647A /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E74C5A277DACC200AF647A /* CheckoutView.swift */; };
+		B6E74C79277F0BBA00AF647A /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E74C78277F0BB900AF647A /* Favorite.swift */; };
+		B6E74C7B277F0D5500AF647A /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E74C7A277F0D5500AF647A /* FavoriteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,9 @@
 		B6E74C54277D86E400AF647A /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
 		B6E74C56277DA24800AF647A /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		B6E74C58277DA5F900AF647A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		B6E74C5A277DACC200AF647A /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+		B6E74C78277F0BB900AF647A /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
+		B6E74C7A277F0D5500AF647A /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,13 +119,16 @@
 				B6E74AF2277C5AC300AF647A /* menu.json */,
 				B6E74AEF277C597600AF647A /* Menu.swift */,
 				B6E74AEE277C597600AF647A /* Order.swift */,
+				B6E74C78277F0BB900AF647A /* Favorite.swift */,
 				B6E74AEC277C590300AF647A /* Helper.swift */,
 				B6E74C58277DA5F900AF647A /* MainView.swift */,
 				B6E74AC2277C584600AF647A /* PLHSwiftProjectApp.swift */,
 				B6E74AC4277C584600AF647A /* ContentView.swift */,
 				B6E74C54277D86E400AF647A /* ItemDetail.swift */,
 				B6E74C56277DA24800AF647A /* OrderView.swift */,
+				B6E74C5A277DACC200AF647A /* CheckoutView.swift */,
 				B6E74C29277D557B00AF647A /* ItemRow.swift */,
+				B6E74C7A277F0D5500AF647A /* FavoriteView.swift */,
 				B6E74AC6277C584700AF647A /* Assets.xcassets */,
 				B6E74AC8277C584700AF647A /* Preview Content */,
 			);
@@ -284,9 +293,12 @@
 			files = (
 				B6E74C55277D86E400AF647A /* ItemDetail.swift in Sources */,
 				B6E74C59277DA5F900AF647A /* MainView.swift in Sources */,
+				B6E74C5B277DACC300AF647A /* CheckoutView.swift in Sources */,
 				B6E74C57277DA24800AF647A /* OrderView.swift in Sources */,
+				B6E74C7B277F0D5500AF647A /* FavoriteView.swift in Sources */,
 				B6E74AC5277C584600AF647A /* ContentView.swift in Sources */,
 				B6E74AC3277C584600AF647A /* PLHSwiftProjectApp.swift in Sources */,
+				B6E74C79277F0BBA00AF647A /* Favorite.swift in Sources */,
 				B6E74AF0277C597600AF647A /* Order.swift in Sources */,
 				B6E74C2A277D557B00AF647A /* ItemRow.swift in Sources */,
 				B6E74AED277C590300AF647A /* Helper.swift in Sources */,
